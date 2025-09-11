@@ -1,0 +1,28 @@
+
+{
+  "Studets": [
+    {
+        "name": "Bhargav",
+        "age": 28,
+        "city": "Bangalore",
+        "isStudent": false,
+        "skills": ["Java", "Python", "JavaScript"]
+        },
+        {
+        "name": "John",
+        "age": 22,
+        "city": "New York",
+        "isStudent": true,
+        "skills": ["C++", "HTML", "CSS"]
+        },
+        {
+        "name": "Alice",
+        "age": 25,
+        "city": "San Francisco",
+        "isStudent": false,
+        "skills": ["Ruby", "Go", "Swift"]
+    }
+  ]
+}
+
+
