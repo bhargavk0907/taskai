@@ -51,7 +51,7 @@ public class TaskController {
     }
 
     @GetMapping("/title")
-    public Task findByTitle(@RequestParam  String title) {
+    public Collection<Task> findByTitle(@RequestParam  String title) {
 
         return taskService.findByTitle( title);
     }

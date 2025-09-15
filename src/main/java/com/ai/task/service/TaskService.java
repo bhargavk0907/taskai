@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import java.sql.SQLOutput;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -54,7 +55,7 @@ public class TaskService {
         return "Task deleted with id: " + id;
     }
 
-    public Task findByTitle(String title) {
+    public List<Task> findByTitle(String title) {
         System.out.println("Searching for task with title: " + title);
         return taskRepository.findByTitle(title);
     }
