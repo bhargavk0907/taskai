@@ -1,6 +1,7 @@
 package com.ai.task.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 @Entity
@@ -18,11 +19,13 @@ public class Task {
     private Long id;
 
     @Column(nullable = false)
+    @NotBlank(message = "Title is mandatory")
     private String title;
 
     private String description;
 
     @Column(nullable = false)
+    @NotBlank(message = "Status is mandatory")
     private String status;
 
 
